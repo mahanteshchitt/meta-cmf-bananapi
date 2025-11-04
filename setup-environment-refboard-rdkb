@@ -126,7 +126,7 @@ else # SD card image is default
 	    else
 		    echo "**********************************************************************"
         	    echo "> Missing files are preventing the build from starting:"
-        	    echo "> The BL2 and FIP binaries for kernel-6.6 aren't in the downloads directory. Copy these binaries into the directory and then restart the build. You can find instructions for creating the necessary binaries on the RDK-B Code Releases page: (https://wiki.rdkcentral.com/display/CMF/RDK-B+Code+Releases)"
+        	    echo -e "> The BL2 and FIP binaries for kernel-6.6 aren't in the downloads directory. Copy or Download bpi-r4_sdmmc_bl2_6-6.img\n bpi-r4_sdmmc_fip_6-6.bin\n bpi-r4_sdmmc_bl2_B_6-6.img\n bpi-r4_sdmmc_fip_B_6-6.bin binaries into the directory and then restart the build. You can find instructions for creating the necessary binaries on the RDK-B Code Releases page: (https://wiki.rdkcentral.com/display/CMF/RDK-B+Code+Releases)"
         	    echo "**********************************************************************"
         	    return 1
 	     fi
@@ -136,7 +136,7 @@ else # SD card image is default
       	   else
 		   echo "**********************************************************************"
                    echo "> Missing files are preventing the build from starting:"
-                   echo "> The BL2 and FIP binaries for kernel-5.4 aren't in the downloads directory. Copy these binaries into the directory and then restart the build. You can find instructions for creating the necessary binaries on the RDK-B Code Releases page: (https://wiki.rdkcentral.com/display/CMF/RDK-B+Code+Releases)"
+                   echo -e "> The BL2 and FIP binaries for kernel-5.4 aren't in the downloads directory. Copy or Download bpi-r4_sdmmc_bl2.img\n bpi-r4_sdmmc_fip.bin\n bpi-r4_sdmmc_bl2_B.img\n bpi-r4_sdmmc_fip_B.bin binaries into the directory and then restart the build. You can find instructions for creating the necessary binaries on the RDK-B Code Releases page: (https://wiki.rdkcentral.com/display/CMF/RDK-B+Code+Releases)"
                    echo "**********************************************************************"
                    return 1
              fi		   
